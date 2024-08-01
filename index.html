@@ -1,114 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="stylesheet" href="style.css" />
-      <!-- LEMBRE-SE DE LINKAR SEU JS -->
-      <title>Inputs</title>
-   </head>
-   <body>
-      <div>
-         <h1>Exercicios sobre INPUTS e como manipular eles</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./main.js" defer></script>
+    <title>Inputs</title>
+  </head>
+  <body>
+    <div>
+      <h1>Exercicios sobre INPUTS e como manipular eles</h1>
+    </div>
+
+    <div>
+      <h1>Exercicio numero 1</h1>
+
+      <p>
+        Crie um input do tipo texto e um botão. Ao clicar no botão, o texto que
+        está dentro do input deve ser colocado dentro de uma tag p.
+      </p>
+
+      <div id="exercicio1" class="container">
+        <input type="text" id="inputTF1" class="input">
+
+        <button class="btn" id="snd_btn1">Send</button> </div>
+  
+      </div>
+    </div>
+
+    <!-- mini calculadora de somar -->
+    <div>
+      <h1>Exercicio numero 2</h1>
+
+      <p>
+        Crie dois inputs do tipo number e um botão. Ao clicar no botão, o valor
+        dos dois inputs deve ser somado e o resultado deve ser colocado dentro
+        de uma tag p.
+      </p>
+
+      <div id="exercicio2" class = "container">
+        <input type="number" id="inputNF21" class="input"> <span> + </span>
+        <input type="number" id="inputNF22" class="input">
+        <button class="btn" id="snd_btn2">Send</button> 
+      </div>
+    </div>
+
+    <!-- todo list -->
+    <div>
+      <h1>Exercicio numero 3</h1>
+
+      <p>
+        Crie um input do tipo texto e um botão. Ao clicar no botão, o texto que
+        está dentro do input deve ser colocado dentro de uma tag li. Se o input
+        estiver vazio e o botão ser clicado, um alerta deve ser mostrado na tela
+        dizendo:
+        <strong>Por favor, insira um texto</strong>
+      </p>
+
+      <div id="exercicio3" class="container">
+
+        <input type="text" id="inputTF3" class="input">
+        <button class="btn" id="snd_btn3">Send</button></div>
+
+        <ul id="list3"></ul>
+        
+      </div>
+    </div>
+
+
+    <!-- exercicio com select -->
+    <div>
+      <h1>Exercicio numero 4</h1>
+
+      <p>
+        Crie um select com 3 options. Ao selecionar uma das options, o valor
+        selecionado deve ser colocado dentro de uma tag h3.
+      </p>
+
+      <div id="exercicio4" class="container">
+        <select id="inputSLC4" class="input"> <option value="Alter do Chão">Alter do Chão</option> <option value="Jalapão">Jalapão</option> <option value="Pedra Ronca">Pedra Ronca</option></select>
+        <p>  </p><button class="btn" id="snd_btn4">Save</button></div>
+
+      </div>
+    </div>
+
+    <!-- exercicio com checkbox -->
+    <div>
+      <h1>Exercicio numero 5</h1>
+
+      <p>
+        Crie 3 checkbox com os valores: "Ocupado", "Livre" e "Indisponível". Ao
+        marcar um dos checkbox, o valor do checkbox marcado deve ser colocado
+        dentro de uma tag p.
+      </p>
+      <p>
+        Bonus: Se mais de um checkbox estiver marcado, crie outras tags p para
+        cada valor marcado.
+
+        <!-- ex: <p>Ocupado</p> <p>Livre</p> -->
+      </p>
+      <p>
+        Bonus 2: Ao desmarcar uma checkbox a tag p deve ser retirada da tela.
+      </p>
+
+      <div id="exercicio5" class="container">
+
+        <input type="checkbox" id="inputCB51" value="Ocupado" class="input"><label for:"inputCB51">Ocupado</label><br>
+        <input type="checkbox" id="inputCB52" value="Livre" class="input"><label for:"inputCB52">Livre</label><br>
+        <input type="checkbox" id="inputCB53" value="Indisponível" class="input"><label for:"inputCBE53">Indisponível</label><br>  </div>
+        <br><button class="btn" id="snd_btn5">Save</button></div>
+
       </div>
 
-      <div>
-         <h1>Exercicio numero 1</h1>
+    <!-- exercicio com radio -->
+    <div>
+      <h1>Exercicio numero 6</h1>
 
-         <p>
-            Crie um input do tipo texto e um botão. Ao clicar no botão, o texto
-            que está dentro do input deve ser colocado dentro de uma tag p.
-         </p>
+      <p>
+        Crie 3 radio buttons com os valores: "Masculino", "Feminino" e "Outro".
+        Ao selecionar um dos radio buttons, o valor selecionado deve ser
+        colocado dentro de uma tag p.
+      </p>
 
-         <div id="exercicio1">
-            <!-- Escreva o exercicio aqui -->
-         </div>
+      <div id="exercicio6" class="container">
+        <input type="radio" id="inputRD61" value="Feminino" name='group1' class="input"> <label for="inputRD61">Feminino</label><br> 
+        <input type="radio" id="inputRD62" value="Masculino" name='group1' class="input"> <label for="inputRD62">Masculino</label><br>
+        <input type="radio" id="inputRD63" value="Outro" name='group1' class="input"> <label for="inputRD63">Outro</label>
+        <br><br><button class="btn" id="snd_btn6">Save</button></div>
       </div>
 
-      <!-- mini calculadora de somar -->
-      <div>
-         <h1>Exercicio numero 2</h1>
 
-         <p>
-            Crie dois inputs do tipo number e um botão. Ao clicar no botão, o
-            valor dos dois inputs deve ser somado e o resultado deve ser
-            colocado dentro de uma tag p.
-         </p>
+      <h2> Padronização das declarações</h2>
 
-         <div id="exercicio2">
-            <!-- Escreva o exercicio aqui -->
-         </div>
-      </div>
+      <h3>HTML</h3>
 
-      <!-- todo list -->
-      <div>
-         <h1>Exercicio numero 3</h1>
+      <strong>DIV EXERCISE CONTAINER:</strong><br>
+      id = "exercicioN" <br>
+      class = "container" <br><br>
+      <br>
+      <strong>INPUTS</strong> <br><br>
 
-         <p>
-            Crie um input do tipo texto e um botão. Ao clicar no botão, o texto
-            que está dentro do input deve ser colocado dentro de uma tag li. Se
-            o input estiver vazio e o botão ser clicado, um alerta deve ser
-            mostrado na tela dizendo:
-            <strong>Por favor, insira um texto</strong>
-         </p>
+      class = 'input'<br>
 
-         <div id="exercicio3">
-            <!-- Escreva o exercicio aqui -->
-            <ul></ul>
-         </div>
-      </div>
+      <strong>General syntax</strong> = inputXXNn, where: <br><br>
 
-      <!-- exercicio com select -->
-      <div>
-         <h1>Exercicio numero 4</h1>
+      XX = typefield <br>
+      
+      <ul>Typefields <br>
+      
+      <li>TF = textfield</li>
+      <li>NF = numberfield</li>
+      <li>SLC = select </li>
+      <li> CB = checkbox </li>
+      <li>RD = radio </li>
+    </ul>
 
-         <p>
-            Crie um select com 3 options. Ao selecionar uma das options, o valor
-            selecionado deve ser colocado dentro de uma tag h3.
-         </p>
+      N = exercise number<br>
+      n = inputnumber in exercise<br><br>
 
-         <div id="exercicio4">
-            <!-- Escreva o exercicio aqui -->
-         </div>
-      </div>
+      <strong> example: </strong>
+      <br>
+      An input that is in exercise 3, is the type radio e there are 4 options, it would be like that:<br>
+      inputRD31<br>
+      inputRD32<br>
+      inputRD33<br>
+      inputRD34<br>
+      <br>
+      <br>
 
-      <!-- exercicio com checkbox -->
-      <div>
-         <h1>Exercicio numero 5</h1>
+      <strong>INPUT VALUES</strong><br>
+<br>
+value = label
+<br><br>
 
-         <p>
-            Crie 3 checkbox com os valores: "Ocupado", "Livre" e "Indisponível".
-            Ao marcar um dos checkbox, o valor do checkbox marcado deve ser
-            colocado dentro de uma tag p.
-         </p>
-         <p>
-            Bonus: Se mais de um checkbox estiver marcado, crie outras tags p
-            para cada valor marcado.
-            <!-- ex: <p>Ocupado</p> <p>Livre</p> -->
-         </p>
-         <p>
-            Bonus 2: Ao desmarcar uma checkbox a tag p deve ser retirada da
-            tela.
-         </p>
+<strong>BUTTON</strong><br><br>
+id = "snd_btnN"<br>
+class: "btn"
+</p>
 
-         <div id="exercicio5">
-            <!-- Escreva o exercicio aqui -->
-         </div>
-      </div>
+<h3>JS</h3>
 
-      <!-- exercicio com radio -->
-      <div>
-         <h1>Exercicio numero 6</h1>
+<p>
+  <strong>DECLARATIONS OUTSIDE FUNCTION</strong><br><br>
 
-         <p>
-            Crie 3 radio buttons com os valores: "Masculino", "Feminino" e
-            "Outro". Ao selecionar um dos radio buttons, o valor selecionado
-            deve ser colocado dentro de uma tag p.
-         </p>
+1. Declare exercise container <br><br>
 
-         <div id="exercicio6">
-            <!-- Escreva o exercicio aqui -->
-         </div>
-      </div>
-   </body>
+<i> const containerN</i> <br>
+N = numero do exercicio <br>
+example:<br>
+container3 = declaração do container usado no exercício 3 no js <br>
+const containerN = document.querySelector("#exerciseN")
+
+2. Declare button element<br><br>
+<i>const btnN </i> <br>
+N = numero do exercicio <br>
+example:<br>
+ const btn2 = declaracao do button do exercício 2 no js<br>
+ const btnN = document.querySelector("#idbutton")<br><br>
+
+3. Declare input elements <br><br>
+<i>const idcXXNn</i><br>
+i = input <br>
+dc = declaration <br>
+XX = ('typefield') <br>
+N = ('exercise') <br>
+n = ('inputnumber in exercise')<br><br>
+
+example: <br>
+const idcTF1 = declaracao do input texto field do exercicio 1 no js <br><br>
+
+const idcNF21 = declaracao do primeiro input do exercicio 2 (ele é do tipo number)<br><br>
+
+3. Print const of btn on console<br><br>
+<i>console.log(btnN)</i>
+<br><br>
+
+<strong>DECLARATIONS INSIDE FUNCTION</strong><br><br>
+
+4. Declare button function <br><br>
+
+btnN.addEventListener("click", () => {
+  console.log("Botão clicado!");
+})
+
+5. Declare all inputs values <br><br>
+
+const <i>ivXXNn</i><br>
+i = input <br>
+v = value <br>
+XX = ('typefield') <br>
+N = ('exercise') <br>
+n = ('inputnumber in exercise')<br><br>
+
+const ivTF1 = declaracao do VALOR do input texto field do exercicio 1 no js <br><br>
+
+const ivNF21 = declaracao do VALOR do primeiro input do exercicio 2 (ele é do tipo number)<br><br>
+
+6. Declare variable to create element(s) to store the inputs value<br><br>
+
+const  <i>istorXXNn</i><br>
+i = input <br>
+stor = storage <br>
+XX = ('typefield') <br>
+N = ('exercise') <br>
+n = ('inputnumber in exercise')<br><br>
+
+const istorTF1 = criação do elemento para armazenar resposta do input texto field do exercicio 1 no js <br><br>
+
+const istorNF21 = criação do elemento para armazenar resposta do primeiro input tipo number field do exercicio 2 no js<br><br>
+
+6. Use methods (eg. textcontent) to insert the input VALUE in input STORAGE
+<br><br>
+istorXXNn.textContent = ivXXNn;
+<br><br>
+7. Use methods (eg. AppendChild) to add storage var on container
+<br><br>
+ containerN.appendChild(istorXXNn)
+<br><br>
+
+
+</p>
+
+
+
+    </div>
+  </body>
 </html>
