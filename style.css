@@ -1,8 +1,188 @@
 /* estilização basica só para as coisas não ficarem tão feias */
 
 body {
-   font-family: Arial, sans-serif;
-   background-color: #f0f0f0;
-   margin: 0;
-   padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+/* transformar o .js na imagem do print
+/* usar media query - fazer uma versao desktop e
+/* fazer uma versao mobile iphone 14
+
+/* precisa mexer no html para isso
+
+/* cuidado para nao mexer nas classes e ids usadas para capturar elementos
+
+/* Coisas importantes pra você não esquecer: 
+- Você pode adicionar mais do que uma classe a cada div. Ou seja, se você tem uma div que você ta usando essa classe para o JS, é só adicionar uma nova classe e usar ela para estilização. 
+- As classes são separadas por um ESPAÇO. 
+- NUNCA declare suas propriedades classe em uma elemento só. ex:  <div id="exercicio5" class="container" class="checkbox">
+- Classes são cumulativas
+
+/* usar console pra verificar as mods na tela
+/* props de CSS riscadas estao overwrite por alguma coisa
+/* FOCAR EM POSICIONAMENTO!
+/* COMO ESTILIZAR UM BOTAO
+/* DIF ENTRE PADDING E MARGIN
+/* PESQUISAR SOBRE MEDIAQUERY
+
+/* PARA CHECAR MOBILE: COLOCA NAVEGADOR DO TAMANHO DE CELULAR
+
+
+instrucoes
+
+title no inicio com background verde e fonte branca
+
+/* flexbox organizadas em linhas 1 e 2, 3 e 4, 5 e 6
+
+estrutura da flexbox:
+usar space-between
+
+flex example
+title: exercicio 2 = h2 bold
+texto justificada a esquerda do enunciado, fonte normal, color black
+o input field deve ter o tamanho da flexbox
+
+o botao enviar: background color verde e textcolor: branco
+
+no exercicio 2 os inputs devem ficar no meio da pagina
+
+precisa ter um footer onde a fonte é simples como dos enunciados, com background color green e text color white
+o footer pode ter o mesmo tamanho do elemento do inicio da pagina
+mas a fonte é simples
+
+no exercicio 5 as opcoes ocupado livre e disponivel ficam na mesma linha.*/
+
+.title {
+  display: flex;
+  background-color: #4caf50;
+  color: white;
+  justify-content: center;
+}
+
+.exercise_title {
+  color: #4caf50;
+}
+
+.btn {
+  background-color: #4caf50; /* Cor de fundo */
+  color: white; /* Cor do texto */
+  padding: 10px 20px; /* Espaçamento interno */
+  border: none; /* Remove a borda padrão */
+  border-radius: 5px; /* Bordas arredondadas */
+  cursor: pointer; /* Muda o cursor para uma mãozinha ao passar sobre o botão */
+  font-size: 16px; /* Tamanho da fonte */
+}
+
+.grandparentcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  height: 100vh;
+}
+
+.parentcontainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.bigcontainer1 {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: row;
+  width: 100%;
+  margin: 3%;
+}
+
+.bigcontainer2 {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: row;
+  width: 100%;
+  margin: 3%;
+}
+
+.bigcontainer3 {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: row;
+  width: 100%;
+  margin: 3%;
+}
+
+.box {
+  flex: 1;
+  background-color: white;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 350px;
+  margin: 1%;
+  padding: 2%;
+  height: 100%;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #4caf50;
+  color: white;
+  flex-direction: column;
+  margin-top: 5%;
+  padding: 2%;
+}
+
+.documentation {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+@media (max-width: 390px) {
+  .bigcontainer1 {
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 0px;
+  }
+
+  .bigcontainer2 {
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 0px;
+  }
+
+  .bigcontainer3 {
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 0px;
+  }
+
+  .box {
+    width: 100%; /* Faz as caixas ocuparem toda a largura disponível em telas menores */
+    margin-bottom: 10px; /* Adiciona espaço entre as caixas */
+    flex-wrap: wrap;
+  }
+
+  .title {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #4caf50;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+  }
 }

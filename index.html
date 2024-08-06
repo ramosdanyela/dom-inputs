@@ -8,12 +8,16 @@
     <title>Inputs</title>
   </head>
   <body>
-    <div>
-      <h1>Exercicios sobre INPUTS e como manipular eles</h1>
-    </div>
+    <div class="grandparentcontainer">
 
-    <div>
-      <h1>Exercicio numero 1</h1>
+    <div class="title">
+      <h1>Exercícios sobre INPUTS e Manipulação</h1>
+    </div>
+    <div class="parentcontainer">
+<div class="bigcontainer1">
+  <!-- exercicio 1 -->
+    <div class="box">
+      <h1 class="exercise_title">Exercício 1</h1>
 
       <p>
         Crie um input do tipo texto e um botão. Ao clicar no botão, o texto que
@@ -22,15 +26,15 @@
 
       <div id="exercicio1" class="container">
         <input type="text" id="inputTF1" class="input">
-
+        <br> <br>
         <button class="btn" id="snd_btn1">Send</button> </div>
   
       </div>
-    </div>
+   
 
-    <!-- mini calculadora de somar -->
-    <div>
-      <h1>Exercicio numero 2</h1>
+    <!-- exercicio 2 - mini calculadora de somar -->
+    <div class="box">
+      <h1 class="exercise_title" >Exercício 2</h1>
 
       <p>
         Crie dois inputs do tipo number e um botão. Ao clicar no botão, o valor
@@ -40,37 +44,34 @@
 
       <div id="exercicio2" class = "container">
         <input type="number" id="inputNF21" class="input"> <span> + </span>
-        <input type="number" id="inputNF22" class="input">
+        <input type="number" id="inputNF22" class="input"><br><br>
         <button class="btn" id="snd_btn2">Send</button> 
       </div>
     </div>
+  </div>
 
-    <!-- todo list -->
-    <div>
-      <h1>Exercicio numero 3</h1>
+    <!-- exercicio 3 - todo list -->
+    <div class="bigcontainer2">
+    <div class="box">
+      <h1 class="exercise_title">Exercício 3</h1>
 
       <p>
         Crie um input do tipo texto e um botão. Ao clicar no botão, o texto que
         está dentro do input deve ser colocado dentro de uma tag li. Se o input
         estiver vazio e o botão ser clicado, um alerta deve ser mostrado na tela
         dizendo:
-        <strong>Por favor, insira um texto</strong>
+        <strong>Por favor, insira um texto.</strong>
       </p>
 
       <div id="exercicio3" class="container">
-
-        <input type="text" id="inputTF3" class="input">
+        <input type="text" id="inputTF3" class="input"><br><br>
         <button class="btn" id="snd_btn3">Send</button></div>
-
         <ul id="list3"></ul>
-        
       </div>
-    </div>
 
-
-    <!-- exercicio com select -->
-    <div>
-      <h1>Exercicio numero 4</h1>
+    <!-- exercicio 4 - exercicio com select -->
+     <div class="box">
+      <h1 class="exercise_title">Exercício 4</h1>
 
       <p>
         Crie um select com 3 options. Ao selecionar uma das options, o valor
@@ -84,9 +85,10 @@
       </div>
     </div>
 
-    <!-- exercicio com checkbox -->
-    <div>
-      <h1>Exercicio numero 5</h1>
+    <!-- exercicio 5 - exercicio com checkbox -->
+    <div class="bigcontainer3">
+    <div class="box">
+      <h1 class="exercise_title">Exercício 5</h1>
 
       <p>
         Crie 3 checkbox com os valores: "Ocupado", "Livre" e "Indisponível". Ao
@@ -109,12 +111,12 @@
         <input type="checkbox" id="inputCB52" value="Livre" class="input"><label for:"inputCB52">Livre</label><br>
         <input type="checkbox" id="inputCB53" value="Indisponível" class="input"><label for:"inputCBE53">Indisponível</label><br>  </div>
         <br><button class="btn" id="snd_btn5">Save</button></div>
+ 
+     
 
-      </div>
-
-    <!-- exercicio com radio -->
-    <div>
-      <h1>Exercicio numero 6</h1>
+    <!-- exercicio 6 - exercicio com radio -->
+    <div class="box">
+      <h1 class="exercise_title">Exercício 6</h1>
 
       <p>
         Crie 3 radio buttons com os valores: "Masculino", "Feminino" e "Outro".
@@ -128,9 +130,16 @@
         <input type="radio" id="inputRD63" value="Outro" name='group1' class="input"> <label for="inputRD63">Outro</label>
         <br><br><button class="btn" id="snd_btn6">Save</button></div>
       </div>
+    </div>
+  </div>
 
 
-      <h2> Padronização das declarações</h2>
+<div class="footer">
+  <h4>@ 2024 Exercícios de CSS e Inputs</h4>
+</div>
+
+<div class="documentation"> 
+      <h2 > Padronização das declarações</h2>
 
       <h3>HTML</h3>
 
@@ -264,5 +273,8 @@ istorXXNn.textContent = ivXXNn;
 
 
     </div>
+  </div>
+</div>
+</div>
   </body>
 </html>
